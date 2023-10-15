@@ -11,9 +11,9 @@ public class ResultSearchPage {
             currencyInCard = $(".product-card-list");
 
 
-    public ResultSearchPage checkSearch (String value) {
+    public ResultSearchPage checkSearch(String value) {
 
-      currencyInCard.shouldHave(text( value));
+        currencyInCard.shouldHave(text(value));
         return this;
     }
 }

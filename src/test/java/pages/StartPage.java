@@ -1,22 +1,18 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import com.codeborne.selenide.commands.SetValue;
-import com.github.javafaker.Faker;
 
 import static com.codeborne.selenide.Selectors.byText;
-import static com.codeborne.selenide.Selenide.*;
+import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.open;
 
 public class StartPage {
 
 
     SelenideElement
-                  currency= $(".simple-menu__currency"),
-                  setCurrency = $(".popup__form"),
-    search = $("#searchInput");
-
-
-
+            currency = $(".simple-menu__currency"),
+            setCurrency = $(".popup__form"),
+            search = $("#searchInput");
 
 
     public StartPage openPage() {

@@ -12,8 +12,6 @@ import pages.StartPage;
 
 import java.util.stream.Stream;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 
 public class WildberriesCurrency extends TestBase {
 

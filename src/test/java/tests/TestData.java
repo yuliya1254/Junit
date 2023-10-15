@@ -3,7 +3,7 @@ package tests;
 public class TestData {
 
 
-    public  String searchValue = "Поиск";
+    public String searchValue = "Поиск";
 
 
 }
