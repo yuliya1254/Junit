@@ -23,7 +23,7 @@ public class WildberriesCurrency extends TestBase {
 
 
     ///MethodSource
-    static Stream<Arguments> CheckCurrencyMethodSource() {
+    static Stream<Arguments> checkCurrencyMethodSourceTest() {
         return Stream.of(
                 Arguments.of(Currency.KZT, "тг."),
                 Arguments.of(Currency.RUB, "₽"),
@@ -37,7 +37,7 @@ public class WildberriesCurrency extends TestBase {
     @MethodSource
     @ParameterizedTest(name = "При выборе валюты {0} цена должна отображаться в {1}")
     @Tag("Minor")
-    void CheckCurrencyMethodSource(Currency currency, String note) {
+    void checkCurrencyMethodSourceTest(Currency currency, String note) {
         startPage.openPage()
                 .setCurrency(String.valueOf(currency))
                 .setSearch(testData.searchValue);
@@ -51,9 +51,8 @@ public class WildberriesCurrency extends TestBase {
     @DisplayName("Соответсвие результатов поисков дааным ввода")
     @ParameterizedTest
     @Tag("Critical")
-    void CheckVisible(String world) {
+    void checkVisibleTest(String world) {
         startPage.openPage();
-        sleep(2000); // Костыль, так как, пока страница полностью не прогрузится, поиск не производится
         startPage.setSearch(world);
         resultSearchPage.checkSearch(world);
 
@@ -71,7 +70,7 @@ public class WildberriesCurrency extends TestBase {
             delimiterString = "+")
     @ParameterizedTest(name = "При выборе валюты {0} цена должна отображаться в {1}")
     @Tag("Double")
-    void CheckCurrencyCsvSource(Currency currency, String note) {
+    void checkCurrencyCsvSourceTest(Currency currency, String note) {
         startPage.openPage()
                 .setCurrency(String.valueOf(currency))
                 .setSearch(testData.searchValue);
