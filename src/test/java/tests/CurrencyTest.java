@@ -4,8 +4,9 @@ import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import pages.ResultSearchPage;
 import pages.StartPage;
+import testData.Currency;
+import testData.TestData;
 
 import java.util.stream.Stream;
 
@@ -30,7 +31,7 @@ public class CurrencyTest extends TestBase {
 
     @MethodSource
     @ParameterizedTest(name = "При выборе валюты {0} цена должна отображаться в {1}")
-    @Tag("Critical")
+    @Tag("MainPage")
     void checkCurrencyMethodSourceTest(Currency currency, String note) {
         startPage.openPage()
                 .setCurrency(String.valueOf(currency))

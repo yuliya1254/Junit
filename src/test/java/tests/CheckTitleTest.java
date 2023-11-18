@@ -4,8 +4,7 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import pages.StartPage;
-
-import static com.codeborne.selenide.Selenide.sleep;
+import testData.TestData;
 
 public class CheckTitleTest extends TestBase{
     StartPage startPage = new StartPage();
@@ -13,7 +12,7 @@ public class CheckTitleTest extends TestBase{
 
     @DisplayName("Проверка содержания заголовка сайта")
     @Test
-    @Tag("Critical")
+    @Tag("MainPage")
     void checkTitleTest() {
         startPage.openPage();
        startPage.setTitle(data.title);

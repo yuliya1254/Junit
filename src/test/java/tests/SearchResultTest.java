@@ -17,7 +17,7 @@ public class SearchResultTest extends TestBase{
     @ValueSource(strings = {"Куртка", "Гель", "Майка"})
     @DisplayName("Соответсвие результатов поиска дааным ввода")
     @ParameterizedTest
-    @Tag("Critical")
+    @Tag("SearchPage")
     void checkVisibleTest(String world) {
         startPage.openPage();
         sleep(2000);

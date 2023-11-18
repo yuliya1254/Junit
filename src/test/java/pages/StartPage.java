@@ -1,6 +1,7 @@
 package pages;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selectors.byText;
@@ -22,7 +23,7 @@ public class StartPage {
             searchForPhoto = $("#searchByImageContainer");
 
 
-
+    @Step("Проверка отображаемой валюты")
     public StartPage checkSearch(String value) {
 
         currencyInCard.shouldHave(text(value));
@@ -30,39 +31,39 @@ public class StartPage {
     }
 
 
-
+    @Step("Открыть страницу")
     public StartPage openPage() {
         open("/");
         return this;
     }
 
-
+    @Step("Выбрать валюту")
     public StartPage setCurrency(String value) {
         currency.click();
         setCurrency.$(byText(value)).click();
         return this;
     }
-
+    @Step("Ввести в поле поиска слово {value}")
     public StartPage setSearch(String value) {
         search.setValue(value).pressEnter();
         return this;
     }
-
+    @Step("Ввести в поле поиска слово {value}")
     public StartPage setButtonMenu() {
         buttonMenu.click();
         return this;
     }
-
+    @Step("Проверка разделов в боковом меню")
     public StartPage menuList(String value) {
         menuList.shouldHave(text(value));
         return this;
     }
-
+    @Step("Проверка текста в заголовке страницы")
     public StartPage setTitle (String value ){
         title.shouldHave(text(value));
         return this;
     }
-
+    @Step("Проверка всплывающего текста, при наведении на значок фотоаппарата")
     public StartPage searchForPhoto (String value){
         searchForPhoto.hover().shouldHave(text(value));
         return this;

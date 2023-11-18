@@ -3,9 +3,8 @@ package tests;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.ValueSource;
 import pages.StartPage;
+import testData.TestData;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
@@ -15,7 +14,7 @@ public class CheckBurgerMenuTest extends TestBase{
 
     @Test
     @DisplayName("Проверка содержания бокового меню")
-    @Tag("Critical")
+    @Tag("MainPage")
     void checkBurgerMenuTest() {
         startPage.openPage();
         sleep(2000);

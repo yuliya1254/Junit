@@ -18,7 +18,7 @@ public class TestBase {
 
     @BeforeEach
     public void beforeAllCase() {
-        Configuration.baseUrl = "https://demoqa.com";
+        Configuration.baseUrl = "https://www.wildberries.ru/";
         Configuration.pageLoadStrategy = "eager";
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("version", "100");
