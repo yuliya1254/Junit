@@ -50,6 +50,7 @@ tasks.withType(Test) {
 
 task allTest (type: Test) {
     useJUnitPlatform {
+        includeTags("MainPage" , "SearchPage")
 
     }
 }

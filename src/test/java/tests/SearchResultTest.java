@@ -20,7 +20,6 @@ public class SearchResultTest extends TestBase{
     @Tag("SearchPage")
     void checkVisibleTest(String world) {
         startPage.openPage();
-        sleep(2000);
         startPage.setSearch(world);
         resultSearchPage.checkSearch(world);
 
