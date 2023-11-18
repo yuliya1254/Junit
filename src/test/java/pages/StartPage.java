@@ -38,7 +38,7 @@ public class StartPage {
 
     @Step("Выбрать валюту")
     public StartPage setCurrency(String value) {
-        currency.click();
+        currency.hover();
         setCurrency.$(byText(value)).click();
         return this;
     }
