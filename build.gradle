@@ -27,7 +27,6 @@ dependencies {
 
 test {
     useJUnitPlatform{
-        includeTags("Critical")
     }
 }
 
