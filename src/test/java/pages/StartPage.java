@@ -19,13 +19,12 @@ public class StartPage {
             menuList = $(".menu-burger__main-list"),
             title = $(".header__top"),
 
-            currencyInCard = $(".main-page__content"),
+            currencyInCard = $(".product-card__wrapper"),
             searchForPhoto = $("#searchByImageContainer");
 
 
     @Step("Проверка отображаемой валюты")
-    public StartPage checkSearch(String value) {
-
+    public StartPage checkCurrency(String value) {
         currencyInCard.shouldHave(text(value));
         return this;
     }

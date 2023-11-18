@@ -53,6 +53,7 @@ task allTest (type: Test) {
         includeTags("MainPage" , "SearchPage")
 
     }
+
 }
 
 

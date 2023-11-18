@@ -35,7 +35,7 @@ public class CurrencyTest extends TestBase {
     void checkCurrencyMethodSourceTest(Currency currency, String note) {
         startPage.openPage()
                 .setCurrency(String.valueOf(currency))
-                .checkSearch(note);
+                .checkCurrency(note);
 
     }
 
