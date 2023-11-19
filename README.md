@@ -100,6 +100,6 @@
 
 <p align="center">
 
-  <img title="Selenoid video" src="images/c38c13b0e38b770d29d7c4a3db1aea5a.gif">
+  <img title="Selenoid video" src="media/video/video.gif">
 
 </p>
