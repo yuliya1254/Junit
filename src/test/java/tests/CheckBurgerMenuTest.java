@@ -13,6 +13,7 @@ public class CheckBurgerMenuTest extends TestBase{
     StartPage startPage = new StartPage();
     TestData data = new TestData();
 
+
     @Test
     @Feature("Главная страница")
     @DisplayName("Проверка содержания бокового меню")
