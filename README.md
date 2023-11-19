@@ -87,7 +87,7 @@
 ## <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/>Telegram уведомления</a>
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="mimages/telegram.png">
+<img title="Allure Overview Dashboard" src="images/telegram.png">
 </p>
 
 ## <img src="media/logo/Jira.svg" width="25" height="25" alt="Jira"/>Atlassian Jira интеграция</a>
