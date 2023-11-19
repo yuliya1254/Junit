@@ -1,5 +1,5 @@
 
-# <a href="https://rt-solar.ru/start/"><img src="images/logo.png" width="55" height="55"/></a> Проект по автоматизации тестирования для «Ростелеком-Солар»
+# <a href="https://www.wildberries.ru/"><img src="images/logo.png" width="55" height="55"/></a> Проект по автоматизации тестирования для «Wildberries»
 
 ## :technologist: Технологии и инструменты
 
@@ -22,20 +22,19 @@
 
 ## :heavy_check_mark: Список проверок, реализованных в автотестах
 
-- [x] Проверка кликабельности кнопки "Подать заявку"
-- [x] Проверка полей формы для отклика на стажировку
-- [x] Проверка управляющих элементов формы
-- [x] Проверка заголовков на главной странице
-- [x] Проверка наличия логотипа на главной странице
-- [x] Для проверки рездела FAQ и футтера страницы применены параметризованные тесты
+- [x] Проверка содержания бокового меню
+- [x] Отображение всплывающей подсказки при наведение на кнопку Фотоаппарата
+- [x] Проверка содержания заголовка сайта
+- [x] Для проверки отображения валюты применены параметризованные тесты
+- [x] Соответсвие результатов поиска дааным ввода применены параметризованные тесты
 - [x] Имеются интеграции с Jira и Allure TestOps
 
 
 
 ## :heavy_check_mark: Список проверок, реализованных в ручных тестах
 
-- [x] Проверка ссылок на главной странице
-- [x] Проверка работы кнопки "Обратная связь"
+- [x] Проверка атрибутов в карточке товара
+
 
 ## :rocket: Запуск тестов
 
@@ -49,22 +48,22 @@
 <img title="Jenkins" src="media/video/Jenkins.jpg">
 </p>
 
-1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/IMak_Project/">проект</a>
+1. Открыть <a target="_blank" href="https://jenkins.autotests.cloud/job/wildberries1/">проект</a>
 2. Нажать **Build with Parameters**
 3. Результат запуска сборки можно посмотреть в отчёте Allure
 
 ## :triangular_flag_on_post: Allure отчеты:
 
-### <img src="media/logo/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/017-aolshanskaya-hw_14/12/allure/"> report</a>
+### <img src="media/logo/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/wildberries1/5/allure/"> report</a>
 
 #### :black_small_square: Основной отчет
 <p align="center">
-<img title="Allure Report Dashboards" src="media/video/AllureReport.jpg">
+<img title="Allure Report Dashboards" src="media/video/othetAllure.jpg">
 </p>
 
 #### :black_small_square: Тесты
 <p align="center">
-<img title="Allure Report Tests" src="media/video/AllureReportTests.jpg">
+<img title="Allure Report Tests" src="media/video/testsAllure.jpg">
 </p>
 
 ### <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/19967"> TestOps</a>
