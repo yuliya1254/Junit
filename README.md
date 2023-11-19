@@ -63,35 +63,36 @@
 
 #### :black_small_square: Тесты
 <p align="center">
-<img title="Allure Report Tests" src="media/video/testsAllure.jpg">
+<img title="Allure Report Tests" src="images/testForAllure.png">
 </p>
 
-### <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/jobrun/19967"> TestOps</a>
+### <img src="media/logo/Allure_TO.svg" width="25" height="25"  alt="Allure TestOps"/>Отчет в Allure</a> <a target="_blank" href="https://allure.autotests.cloud/project/3815/dashboards"> TestOps</a>
 
 #### :black_small_square: Основной отчет
 <p align="center">
-<img title="Allure TestOps Dashboards" src="media/video/AllureTestOps.jpg">
+<img title="Allure TestOps Dashboards" src="images/testOpsOrhet.png">
 </p>
 
 #### :black_small_square: Тесты
 <p align="center">
-<img title="Allure TestOps Tests" src="media/video/AllureTestOpsCase.jpg">
+<img title="Allure TestOps Tests" src="images/testsForTestOp.png">
 </p>
+
 
 #### :black_small_square: Пример ручных тестов
 <p align="center">
-  <img title="Allure TestOps manual tests" src="media/video/AllureTestOpsManualCase.jpg">
+  <img title="Allure TestOps manual tests" src="images/forManual.png">
 </p>
 
 ## <img src="media/logo/Telegram.svg" width="25" height="25"  alt="Telegram"/>Telegram уведомления</a>
 
 <p align="center">
-<img title="Allure Overview Dashboard" src="media/video/telegramBot.jpg">
+<img title="Allure Overview Dashboard" src="mimages/telegram.png">
 </p>
 
 ## <img src="media/logo/Jira.svg" width="25" height="25" alt="Jira"/>Atlassian Jira интеграция</a>
 <p align="center">
-  <img title="Allure TestOps overview" src="images/Jira.jpg">
+  <img title="Allure TestOps overview" src="images/jira.png">
 </p>
 
 ##  <img src="media/logo/Selenoid.svg" width="25" height="25" alt="Selenoid"/>Selenoid видеозапись тестов</a>
