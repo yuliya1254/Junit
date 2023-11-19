@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -30,6 +31,7 @@ public class CurrencyTest extends TestBase {
 
 
     @MethodSource
+    @Feature("Главная страница")
     @ParameterizedTest(name = "При выборе валюты {0} цена должна отображаться в {1}")
     @Tag("MainPage")
     void checkCurrencyMethodSourceTest(Currency currency, String note) {

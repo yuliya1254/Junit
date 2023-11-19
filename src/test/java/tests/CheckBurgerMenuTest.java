@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -13,6 +14,7 @@ public class CheckBurgerMenuTest extends TestBase{
     TestData data = new TestData();
 
     @Test
+    @Feature("Главная страница")
     @DisplayName("Проверка содержания бокового меню")
     @Tag("MainPage")
     void checkBurgerMenuTest() {

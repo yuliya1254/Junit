@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
@@ -10,8 +11,9 @@ public class CheckTitleTest extends TestBase{
     StartPage startPage = new StartPage();
     TestData data = new TestData();
 
-    @DisplayName("Проверка содержания заголовка сайта")
     @Test
+    @DisplayName("Проверка содержания заголовка сайта")
+    @Feature("Главная страница")
     @Tag("MainPage")
     void checkTitleTest() {
         startPage.openPage();

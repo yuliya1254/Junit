@@ -1,5 +1,6 @@
 package tests;
 
+import io.qameta.allure.Feature;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -15,6 +16,7 @@ public class SearchResultTest extends TestBase{
     ResultSearchPage resultSearchPage = new ResultSearchPage();
 
     @ValueSource(strings = {"Куртка", "Гель", "Майка"})
+    @Feature("Страница поиска")
     @DisplayName("Соответсвие результатов поиска дааным ввода")
     @ParameterizedTest
     @Tag("SearchPage")
