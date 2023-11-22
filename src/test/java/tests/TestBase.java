@@ -6,6 +6,7 @@ import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Map;
@@ -32,8 +33,13 @@ public class TestBase {
         ));
         Configuration.browserCapabilities = capabilities;
 
+    }
+
+    @BeforeEach
+    public void  allure(){
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
+
 
 
     @AfterEach
