@@ -17,7 +17,7 @@ public class TestBase {
 
     @BeforeAll
     static  void beforeAllCase() {
-        Configuration.baseUrl = "https://www.wildberries.ru";
+        //Configuration.baseUrl = "https://www.wildberries.ru";
         Configuration.pageLoadStrategy = "eager";
         Configuration.browser = System.getProperty("browser", "chrome");
         Configuration.browserVersion = System.getProperty("version", "100");
