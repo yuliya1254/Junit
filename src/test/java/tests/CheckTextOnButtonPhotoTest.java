@@ -7,8 +7,6 @@ import org.junit.jupiter.api.Test;
 import pages.StartPage;
 import testData.TestData;
 
-import static com.codeborne.selenide.Selenide.open;
-
 
 public class CheckTextOnButtonPhotoTest extends TestBase {
 
@@ -20,8 +18,7 @@ public class CheckTextOnButtonPhotoTest extends TestBase {
     @DisplayName("Отображение всплывающей подсказки при наведение на кнопку Фотоаппарата")
     @Tag("MainPage")
     void checkBurgerMenuTest() {
-        open("https://www.wildberries.ru");
-        startPage //.openPage()
+        startPage.openPage()
                 .checkForPhoto(data.searchForPhotoText);
 
 

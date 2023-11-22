@@ -20,8 +20,7 @@ public class CheckBurgerMenuTest extends TestBase {
     @DisplayName("Проверка содержания бокового меню")
     @Tag("MainPage")
     void checkBurgerMenuTest() {
-        open("https://www.wildberries.ru");
-        //startPage.openPage();
+        startPage.openPage();
         //sleep(2000);
         startPage.clickButtonMenu();
         startPage.checkMenuList(data.menuList);
