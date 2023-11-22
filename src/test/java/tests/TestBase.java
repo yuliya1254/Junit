@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 public class TestBase {
 
     @BeforeAll
-    public void beforeAllCase() {
+    public static void beforeAllCase() {
         Configuration.baseUrl = "https://www.wildberries.ru";
         Configuration.pageLoadStrategy = "eager";
         Configuration.browser = System.getProperty("browser", "chrome");
