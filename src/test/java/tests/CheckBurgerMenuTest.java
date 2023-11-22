@@ -20,7 +20,7 @@ public class CheckBurgerMenuTest extends TestBase {
     @Tag("MainPage")
     void checkBurgerMenuTest() {
         startPage.openPage();
-        sleep(2000);
+        //sleep(2000);
         startPage.clickButtonMenu();
         startPage.checkMenuList(data.menuList);
 
