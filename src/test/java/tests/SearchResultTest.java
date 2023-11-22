@@ -10,7 +10,7 @@ import pages.StartPage;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class SearchResultTest extends TestBase{
+public class SearchResultTest extends TestBase {
 
     StartPage startPage = new StartPage();
     ResultSearchPage resultSearchPage = new ResultSearchPage();
@@ -23,7 +23,7 @@ public class SearchResultTest extends TestBase{
     void checkVisibleTest(String world) {
         startPage.openPage();
         sleep(2000);
-        startPage.setSearch(world);
+        startPage.inputSearch(world);
         resultSearchPage.checkSearch(world);
 
     }

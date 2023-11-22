@@ -8,7 +8,7 @@ import pages.StartPage;
 import testData.TestData;
 
 
-public class CheckTextOnButtonPhotoTest extends TestBase{
+public class CheckTextOnButtonPhotoTest extends TestBase {
 
     StartPage startPage = new StartPage();
     TestData data = new TestData();
@@ -19,10 +19,7 @@ public class CheckTextOnButtonPhotoTest extends TestBase{
     @Tag("MainPage")
     void checkBurgerMenuTest() {
         startPage.openPage()
-                 .searchForPhoto(data.searchForPhotoText);
-
-
-
+                .checkForPhoto(data.searchForPhotoText);
 
 
     }

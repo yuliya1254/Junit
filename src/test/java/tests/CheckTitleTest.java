@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import pages.StartPage;
 import testData.TestData;
 
-public class CheckTitleTest extends TestBase{
+public class CheckTitleTest extends TestBase {
     StartPage startPage = new StartPage();
     TestData data = new TestData();
 
@@ -17,7 +17,7 @@ public class CheckTitleTest extends TestBase{
     @Tag("MainPage")
     void checkTitleTest() {
         startPage.openPage();
-       startPage.setTitle(data.title);
+        startPage.setTitle(data.title);
 
     }
 

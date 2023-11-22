@@ -5,7 +5,7 @@ import com.codeborne.selenide.logevents.SelenideLogger;
 import helpers.Attach;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.util.Map;
@@ -14,7 +14,7 @@ import static com.codeborne.selenide.Selenide.closeWebDriver;
 
 public class TestBase {
 
-    @BeforeEach
+    @BeforeAll
     public void beforeAllCase() {
         Configuration.baseUrl = "https://www.wildberries.ru";
         Configuration.pageLoadStrategy = "eager";
@@ -22,7 +22,6 @@ public class TestBase {
         Configuration.browserVersion = System.getProperty("version", "100");
         Configuration.holdBrowserOpen = false;
         Configuration.browserSize = System.getProperty("windowSize", "1920x1080");
-        Configuration.timeout = 10000;
         Configuration.remote = System.getProperty("webDriver", "https://user1:1234@selenoid.autotests.cloud/wd/hub");
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
@@ -32,12 +31,10 @@ public class TestBase {
                 "enableVideo", true
         ));
         Configuration.browserCapabilities = capabilities;
-    }
 
-    @BeforeEach
-    void enableAllure() {
         SelenideLogger.addListener("allure", new AllureSelenide());
     }
+
 
     @AfterEach
     void addAttachments() {

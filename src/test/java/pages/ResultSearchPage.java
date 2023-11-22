@@ -11,9 +11,8 @@ public class ResultSearchPage {
     SelenideElement
             currencyInCard = $(".product-card-list");
 
-@Step("Проверка результатов поиска")
+    @Step("Проверка результатов поиска")
     public ResultSearchPage checkSearch(String value) {
-
         currencyInCard.shouldHave(text(value));
         return this;
     }

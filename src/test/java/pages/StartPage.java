@@ -19,7 +19,7 @@ public class StartPage {
             menuList = $(".menu-burger__main-list"),
             title = $(".header__top"),
 
-            currencyInCard = $(".product-card__wrapper"),
+    currencyInCard = $(".product-card__wrapper"),
             searchForPhoto = $("#searchByImageContainer");
 
 
@@ -42,28 +42,33 @@ public class StartPage {
         setCurrency.$(byText(value)).click();
         return this;
     }
+
     @Step("Ввести в поле поиска слово {value}")
-    public StartPage setSearch(String value) {
+    public StartPage inputSearch(String value) {
         search.setValue(value).pressEnter();
         return this;
     }
-    @Step("Ввести в поле поиска слово {value}")
-    public StartPage setButtonMenu() {
+
+    @Step("Нажать на кнопку 'Бургер-меню'")
+    public StartPage clickButtonMenu() {
         buttonMenu.click();
         return this;
     }
+
     @Step("Проверка разделов в боковом меню")
-    public StartPage menuList(String value) {
+    public StartPage checkMenuList(String value) {
         menuList.shouldHave(text(value));
         return this;
     }
+
     @Step("Проверка текста в заголовке страницы")
-    public StartPage setTitle (String value ){
+    public StartPage setTitle(String value) {
         title.shouldHave(text(value));
         return this;
     }
+
     @Step("Проверка всплывающего текста, при наведении на значок фотоаппарата")
-    public StartPage searchForPhoto (String value){
+    public StartPage checkForPhoto(String value) {
         searchForPhoto.hover().shouldHave(text(value));
         return this;
     }

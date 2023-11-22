@@ -35,6 +35,4 @@ public class TestData {
     public String searchForPhotoText = "Поиск по фото";
 
 
-
-
 }

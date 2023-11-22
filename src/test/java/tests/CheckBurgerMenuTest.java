@@ -9,7 +9,7 @@ import testData.TestData;
 
 import static com.codeborne.selenide.Selenide.sleep;
 
-public class CheckBurgerMenuTest extends TestBase{
+public class CheckBurgerMenuTest extends TestBase {
     StartPage startPage = new StartPage();
     TestData data = new TestData();
 
@@ -21,8 +21,8 @@ public class CheckBurgerMenuTest extends TestBase{
     void checkBurgerMenuTest() {
         startPage.openPage();
         sleep(2000);
-        startPage.setButtonMenu();
-        startPage.menuList(data.menuList);
+        startPage.clickButtonMenu();
+        startPage.checkMenuList(data.menuList);
 
     }
 
