@@ -22,7 +22,7 @@ public class SearchResultTest extends TestBase {
     @Tag("SearchPage")
     void checkVisibleTest(String world) {
         startPage.openPage();
-        //sleep(2000);
+        sleep(2000);
         startPage.inputSearch(world);
         resultSearchPage.checkSearch(world);
 
