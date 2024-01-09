@@ -40,7 +40,7 @@
 
 ###  :rocket: Локальный запуск :
 ```bash
-./gradlew test
+gradle clean test
 ```
 
 ###  :rocket: Удаленный запуск (в Jenkins):
