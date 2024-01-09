@@ -7,9 +7,6 @@ import org.junit.jupiter.api.Test;
 import pages.StartPage;
 import testData.TestData;
 
-import static com.codeborne.selenide.Selenide.open;
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class CheckBurgerMenuTest extends TestBase {
     StartPage startPage = new StartPage();
     TestData data = new TestData();
@@ -21,7 +18,6 @@ public class CheckBurgerMenuTest extends TestBase {
     @Tag("MainPage")
     void checkBurgerMenuTest() {
         startPage.openPage();
-        sleep(2000);
         startPage.clickButtonMenu();
         startPage.checkMenuList(data.menuList);
 

@@ -8,8 +8,6 @@ import org.junit.jupiter.params.provider.ValueSource;
 import pages.ResultSearchPage;
 import pages.StartPage;
 
-import static com.codeborne.selenide.Selenide.sleep;
-
 public class SearchResultTest extends TestBase {
 
     StartPage startPage = new StartPage();
@@ -22,7 +20,6 @@ public class SearchResultTest extends TestBase {
     @Tag("SearchPage")
     void checkVisibleTest(String world) {
         startPage.openPage();
-        sleep(2000);
         startPage.inputSearch(world);
         resultSearchPage.checkSearch(world);
 
