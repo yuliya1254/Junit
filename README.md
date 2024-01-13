@@ -54,7 +54,7 @@ gradle clean test
 
 ## :triangular_flag_on_post: Allure отчеты:
 
-### <img src="media/logo/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/wildberries1/5/allure/"> report</a>
+### <img src="media/logo/Allure.svg" width="25" height="25"  alt="Allure"/>Отчет в Allure</a> <a target="_blank" href="https://jenkins.autotests.cloud/job/wildberries1/allure/"> report</a>
 
 #### :black_small_square: Основной отчет
 <p align="center">
