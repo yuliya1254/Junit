@@ -1,20 +1,18 @@
 package tests;
 
+import data.Currency;
 import io.qameta.allure.Feature;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import pages.StartPage;
-import testData.Currency;
-import testData.TestData;
 
 import java.util.stream.Stream;
 
 
 public class CurrencyTest extends TestBase {
 
-    TestData testData = new TestData();
     StartPage startPage = new StartPage();
 
 

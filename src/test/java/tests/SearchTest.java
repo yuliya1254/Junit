@@ -8,7 +8,7 @@ import org.junit.jupiter.params.provider.ValueSource;
 import pages.ResultSearchPage;
 import pages.StartPage;
 
-public class SearchResultTest extends TestBase {
+public class SearchTest extends TestBase {
 
     StartPage startPage = new StartPage();
     ResultSearchPage resultSearchPage = new ResultSearchPage();

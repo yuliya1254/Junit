@@ -1,12 +1,11 @@
-package testData;
+package data;
 
 public class TestData {
 
 
     public String title = "Продавайте на Wildberries Работа в Wildberries";
 
-    public String menuList = "Чёрная пятница\n" +
-            "Женщинам\n" +
+    public String menuList = "Женщинам\n" +
             "Обувь\n" +
             "Детям\n" +
             "Мужчинам\n" +
@@ -29,10 +28,20 @@ public class TestData {
             "Сад и дача\n" +
             "Здоровье\n" +
             "Канцтовары\n" +
+            "Народные Промыслы\n" +
             "Акции\n" +
             "Цифровые товары\n" +
             "Путешествия";
+
     public String searchForPhotoText = "Поиск по фото";
+
+    public String delivery = "Доставка";
+
+    public String authForm = "Войти или создать профиль\n" +
+            "Россия +7\n" +
+            "+7 000 000-00-00\n" +
+            "Получить код\n" +
+            "Соглашаюсь с правилами пользования торговой площадкой и возврата";
 
 
 }

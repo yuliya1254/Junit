@@ -55,9 +55,17 @@ tasks.withType(Test) {
     }
 }
 
-task allTest (type: Test) {
+task MainPage (type: Test) {
     useJUnitPlatform {
-        includeTags("MainPage" , "SearchPage")
+        includeTags("MainPage")
+
+    }
+
+}
+
+task SearchPage (type: Test) {
+    useJUnitPlatform {
+        includeTags("SearchPage")
 
     }
 
