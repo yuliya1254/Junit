@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Condition.text;
 import static com.codeborne.selenide.Selenide.$;
 
 public class LoginPage {
-    private SelenideElement
+    private final SelenideElement
             authForm = $("#spaAuthForm");
 
     @Step("Проверка содежания формы авторизации")

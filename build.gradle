@@ -55,7 +55,7 @@ tasks.withType(Test) {
     }
 }
 
-task MainPage (type: Test) {
+task mainPage (type: Test) {
     useJUnitPlatform {
         includeTags("MainPage")
 
@@ -63,7 +63,7 @@ task MainPage (type: Test) {
 
 }
 
-task SearchPage (type: Test) {
+task searchPage (type: Test) {
     useJUnitPlatform {
         includeTags("SearchPage")
 
