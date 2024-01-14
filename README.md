@@ -19,19 +19,14 @@
 <a href="https://web.telegram.org/"><img width="5%" title="Telegram" src="media/logo/Telegram.svg"></a>
 </p>
 
-В данном проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code> для UI-тестов.
+#### В данном проекте автотесты написаны на <code>Java</code> с использованием <code>Selenide</code> для UI-тестов.
 
-> <code>Gradle<code> — используется как инструмент автоматизации сборки.
->
-> <code>Jenkins<code> — CI/CD для удаленного запуска тестов.
-> 
-> <code>Selenoid<code> — для удаленного запуска браузеров в Docker-контейнерах.
-> 
-> <code>Allure Report<code> – для визуализации результатов испытаний.
-> 
-> <code>Telegram Bot<code> — для уведомлений о результатах тестов.
-> 
-> <code>Allure TestOps<code> - как система управления тестированием.
+- <code>Gradle<code> — используется как инструмент автоматизации сборки.
+-  <code>Jenkins<code> — CI/CD для удаленного запуска тестов.
+- <code>Selenoid<code> — для удаленного запуска браузеров в Docker-контейнерах. 
+- <code>Allure Report<code> – для визуализации результатов испытаний.
+- <code>Telegram Bot<code> — для уведомлений о результатах тестов.
+- <code>Allure TestOps<code> - как система управления тестированием.
 
 
 ## :heavy_check_mark: Список проверок, реализованных в автотестах
