@@ -100,9 +100,9 @@ gradle clean test
 <img title="Allure Overview Dashboard" src="media/images/telegram.png">
 </p>
 
-## <img src="media/logo/Jira.svg" width="25" height="25" alt="Jira"/>Atlassian Jira интеграция</a>
+## <img src="media/logo/Jira.svg" width="25" height="25"  alt=/>Atlassian Jira</a> <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-968">интеграция</a>
 <p align="center">
-  <img title="Allure TestOps overview" src="media/images/jira.png">
+  <img title="Atlassian Jira" src="media/images/jira.png">
 </p>
 
 ##  <img src="media/logo/Selenoid.svg" width="25" height="25" alt="Selenoid"/>Selenoid видеозапись тестов</a>
