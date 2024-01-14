@@ -68,7 +68,7 @@ gradle clean test
 
 #### :black_small_square: Основной отчет
 <p align="center">
-<img title="Allure Report Dashboards" src="media/video/othetAllure.jpg">
+<img title="Allure Report Dashboards" src="media/video/othetAllure.png">
 </p>
 
 #### :black_small_square: Тесты
