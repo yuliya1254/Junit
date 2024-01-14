@@ -12,18 +12,18 @@ import static com.codeborne.selenide.Selenide.open;
 public class StartPage {
 
 
-    private SelenideElement
-            currency = $(".profile-menu__currency"),
-            setCurrency = $(".popup__content"),
-            search = $("#searchInput"),
-            buttonMenu = $("[data-wba-header-name = Catalog]"),
-            menuList = $(".menu-burger__main-list"),
-            title = $(".header__top"),
-            currencyInCard = $(".product-card__wrapper"),
-            searchForPhoto = $("#searchByImageContainer"),
-            pointLogin = $("[data-wba-header-name=Login]"),
-            banners = $(".swiper-container"),
-            iconAddress = $("[data-wba-header-name=Pick_up_points]");
+    private final SelenideElement
+            currency = $(".profile-menu__currency");
+    private final SelenideElement setCurrency = $(".popup__content");
+    private final SelenideElement search = $("#searchInput");
+    private final SelenideElement buttonMenu = $("[data-wba-header-name = Catalog]");
+    private final SelenideElement menuList = $(".menu-burger__main-list");
+    private final SelenideElement title = $(".header__top");
+    private final SelenideElement currencyInCard = $(".product-card__wrapper");
+    private final SelenideElement searchForPhoto = $("#searchByImageContainer");
+    private final SelenideElement pointLogin = $("[data-wba-header-name=Login]");
+    private final SelenideElement banners = $(".swiper-container");
+    private final SelenideElement iconAddress = $("[data-wba-header-name=Pick_up_points]");
 
 
     @Step("Проверка отображаемой валюты")

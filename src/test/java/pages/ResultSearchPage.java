@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ResultSearchPage {
 
-    private SelenideElement
+    private final SelenideElement
             currencyInCard = $(".product-card-list");
 
     @Step("Проверка результатов поиска")

@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 
 public class ServicesPage {
 
-    private SelenideElement
+    private final SelenideElement
             chapterTitle = $(".free-shipping-banner");
 
     @Step("Проверка названия раздела")
